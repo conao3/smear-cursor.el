@@ -53,7 +53,7 @@ Or with [[https://github.com/conao3/leaf.el][leaf.el]]:
 #+begin_src emacs-lisp
   (leaf smear-cursor
     :ensure t
-    :global-minor-mode smear-cursor-mode)
+    :global-minor-mode t)
 #+end_src
 
 * Customize
