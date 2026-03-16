@@ -28,6 +28,12 @@
 
 Renders smear trail behind the cursor.
 
+Ported from [[https://github.com/mattn/vim-smear-cursor][vim-smear-cursor]] by mattn, which was inspired by [[https://github.com/sphamba/smear-cursor.nvim][smear-cursor.nvim]].
+
+Uses 1/8 block characters (▁▂▃▄▅▆▇█) rendered as buffer overlays with a
+6-level brightness gradient.  The trail is progressively erased via a
+repeating timer, tail-first.
+
 * Install
 Sample install code using [[https://github.com/conao3/leaf.el][leaf.el]].
 
@@ -36,8 +42,31 @@ Sample install code using [[https://github.com/conao3/leaf.el][leaf.el]].
 #+end_src
 
 * Usage
+Enable the global minor mode:
+
+#+begin_src emacs-lisp
+  (smear-cursor-mode 1)
+#+end_src
+
+Or with [[https://github.com/conao3/leaf.el][leaf.el]]:
+
+#+begin_src emacs-lisp
+  (leaf smear-cursor
+    :ensure t
+    :global-minor-mode smear-cursor-mode)
+#+end_src
 
 * Customize
+| Variable                          | Default | Description                                      |
+|-----------------------------------+---------+--------------------------------------------------|
+| ~smear-cursor-erase-interval~     | ~0.01~  | Seconds between animation erase steps            |
+| ~smear-cursor-min-distance~       | ~3~     | Minimum movement distance to trigger the effect  |
+| ~smear-cursor-aspect~             | ~2.0~   | Row/column aspect ratio correction               |
+| ~smear-cursor-head-width~         | ~0.9~   | Smear half-width at head (new cursor position)   |
+| ~smear-cursor-tail-width~         | ~0.1~   | Smear half-width at tail (old cursor position)   |
+
+Faces ~smear-cursor-lv1~ through ~smear-cursor-lv6~ control the brightness
+gradient from head (bright) to tail (dim).
 
 * Information
 ** Community
@@ -82,6 +111,8 @@ Below operation flow is recommended.
   Copyright (c) Naoya Yamashita - https://conao3.com
   https://github.com/conao3/smear-cursor.el/blob/master/LICENSE
 #+end_example
+
+This package is a port of [[https://github.com/mattn/vim-smear-cursor][vim-smear-cursor]] by mattn, originally licensed under MIT.
 
 ** Author
 - Naoya Yamashita ([[https://github.com/conao3][conao3]])

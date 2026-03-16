@@ -8,6 +8,10 @@
 ;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/conao3/smear-cursor.el
 
+;; Original Author: mattn <mattn.jp@gmail.com>
+;; Original URL: https://github.com/mattn/vim-smear-cursor
+;; Original License: MIT
+
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
