@@ -1,0 +1,9 @@
+;; Keg
+
+(source gnu melpa)
+
+(package
+ (smear-cursor
+  (recipe . (smear-cursor :fetcher github :repo "conao3/smear-cursor.el"))))
+
+(dev-dependency cort)
