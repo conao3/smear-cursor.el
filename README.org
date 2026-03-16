@@ -4,11 +4,11 @@
 [[https://github.com/conao3/smear-cursor.el][https://raw.githubusercontent.com/conao3/files/master/blob/headers/png/smear-cursor.el.png]]
 [[https://github.com/conao3/smear-cursor.el/blob/master/LICENSE][https://img.shields.io/github/license/conao3/smear-cursor.el.svg?style=flat-square]]
 [[https://github.com/conao3/smear-cursor.el/releases][https://img.shields.io/github/tag/conao3/smear-cursor.el.svg?style=flat-square]]
-[[https://github.com/conao3/smear-cursor.el/actions][https://github.com/conao3/smear-cursor.el/workflows/Main%20workflow/badge.svg]]
+[[https://github.com/conao3/smear-cursor.el/actions][https://github.com/conao3/smear-cursor.el/actions/workflows/test.yml/badge.svg]]
 [[https://app.codacy.com/project/conao3/smear-cursor.el/dashboard][https://img.shields.io/codacy/grade/62a36f4f04524d5e8c758440e8071c45.svg?logo=codacy&style=flat-square]]
 [[https://www.patreon.com/conao3][https://img.shields.io/badge/patreon-become%20a%20patron-orange.svg?logo=patreon&style=flat-square]]
 [[https://twitter.com/conao_3][https://img.shields.io/badge/twitter-@conao__3-blue.svg?logo=twitter&style=flat-square]]
-[[https://conao3-support.slack.com/join/shared_invite/enQtNjUzMDMxODcyMjE1LWUwMjhiNTU3Yjk3ODIwNzAxMTgwOTkxNmJiN2M4OTZkMWY0NjI4ZTg4MTVlNzcwNDY2ZjVjYmRiZmJjZDU4MDE][https://img.shields.io/badge/chat-on_slack-blue.svg?logo=slack&style=flat-square]]
+
 
 * Table of Contents
 - [[#description][Description]]
@@ -43,8 +43,7 @@ Sample install code using [[https://github.com/conao3/leaf.el][leaf.el]].
 ** Community
 Any feedback or suggestions are welcome!
 
-You can use github issues, but you can also use [[https://conao3-support.slack.com/join/shared_invite/enQtNjUzMDMxODcyMjE1LWUwMjhiNTU3Yjk3ODIwNzAxMTgwOTkxNmJiN2M4OTZkMWY0NjI4ZTg4MTVlNzcwNDY2ZjVjYmRiZmJjZDU4MDE][Slack]]
-if you want a more casual conversation.
+You can use github issues.
 
 ** Contribution
 We welcome PR!
@@ -53,7 +52,7 @@ We welcome PR!
 - keg
   #+begin_src shell
     cd ~/
-    hub clone conao3/keg .keg
+    gh repo clone conao3/keg .keg
     export PATH="$HOME/.keg/bin:$PATH"
   #+end_src
 
@@ -70,9 +69,9 @@ Below operation flow is recommended.
   git commit -am "brabra"           # Commit (auto-run test before commit)
   # </edit loop>
 
-  hub fork                          # Create fork at GitHub
+  gh repo fork                      # Create fork at GitHub
   git push [user] [feature-branch]  # Push feature-branch to your fork
-  hub pull-request                  # Create pull-request
+  gh pr create                      # Create pull-request
 #+end_src
 
 ** Migration
