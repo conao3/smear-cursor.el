@@ -63,7 +63,7 @@ Or with [[https://github.com/conao3/leaf.el][leaf.el]]:
 | ~smear-cursor-min-distance~       | ~3~     | Minimum movement distance to trigger the effect  |
 | ~smear-cursor-aspect~             | ~2.0~   | Row/column aspect ratio correction               |
 | ~smear-cursor-head-width~         | ~0.9~   | Smear half-width at head (new cursor position)   |
-| ~smear-cursor-tail-width~         | ~0.1~   | Smear half-width at tail (old cursor position)   |
+| ~smear-cursor-tail-width~         | ~0.5~  | Smear half-width at tail (old cursor position)   |
 
 Faces ~smear-cursor-lv1~ through ~smear-cursor-lv6~ control the brightness
 gradient from head (bright) to tail (dim).

@@ -59,7 +59,7 @@
   :type 'float
   :group 'smear-cursor)
 
-(defcustom smear-cursor-tail-width 0.1
+(defcustom smear-cursor-tail-width 0.5
   "Smear half-width at the tail (previous cursor position)."
   :type 'float
   :group 'smear-cursor)
