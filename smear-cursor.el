@@ -5,7 +5,7 @@
 ;; Author: Naoya Yamashita <conao3@gmail.com>
 ;; Version: 0.0.1
 ;; Keywords: convenience
-;; Package-Requires: ((emacs "29.1"))
+;; Package-Requires: ((emacs "26.1"))
 ;; URL: https://github.com/conao3/smear-cursor.el
 
 ;; Original Author: mattn <mattn.jp@gmail.com>
